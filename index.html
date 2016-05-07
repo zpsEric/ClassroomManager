@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>hello world</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery.js" ></script>
+    <script type="text/javascript" src="js/banner.js" ></script>
+    <script type="text/javascript">
+    	$(function(){
+    		var imgJson = {
+    			imgTotal:[{
+						imgUrl:"img/pic1.png",
+						imgTxt:"进入夏季以来,气温逐渐升高,对于爱车也是不小的考验。面临夏季的酷暑爱车我们又需要注意哪些安全事项呢?下面我们就来聊一聊夏季用车那些事。 严防水温过高 在夏季..."
+					},
+					{
+						imgUrl:"img/pic2.png",
+						imgTxt:"进入夏季以来,气温逐渐升高,对于爱车也是不小的考验。面临夏季的酷暑爱车我们又需要注意哪些安全事项呢?下面我们就来聊一聊夏季用车那些事。 严防水温过高 在夏季..."
+					},
+					{
+						imgUrl:"img/pic3.png",
+						imgTxt:"进入夏季以来,气温逐渐升高,对于爱车也是不小的考验。面临夏季的酷暑爱车我们又需要注意哪些安全事项呢?下面我们就来聊一聊夏季用车那些事。 严防水温过高 在夏季..."
+					}]
+    		}
+    		$(".scroll").banner();
+    		$(".Register").click(function(){
+    			if($(".loginBox").css("display") == "none")
+    			{
+    				$(".loginBox").show();
+    			}
+    			else
+    			{
+    				$(".loginBox").hide();
+    			}
+    			$(".loginBox li").click(function(){
+    				$(".loginBox").hide();
+    			})
+    			$(".shadown").click(function(){
+    				$(this).parent().hide();
+    			})
+    			$(".loginBox").hover(function(){
+    				$(this).show();
+    			},function(){
+    				$(this).hide();
+    			})
+    		});
+    	})
+    </script>
+</head>
+<body>
+	<div class="header wrap">
+		<div class="logo fl">
+			<img src="img/logo.png"/>
+		</div>
+		<div class="Login fr">
+			<p><input class="Register" type="button" name="" id="" value="注册" /> <input type="button" value="登录" /></p>
+			<div class="loginBox">
+				<div class="shadown"></div>
+				<ul>
+					<li><a href="#">我是教师</a></li>
+					<li><a href="#">我是学生</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="naver">
+			<ul>
+				<li><a href="#">产品</a></li>
+				<li><a href="#">用户</a></li>
+				<li><a href="#">案例</a></li>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#">支持中心</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="wrap">
+			<div class="banner">
+				<img src="img/banner.jpg"/>
+			</div>
+		</div>
+		<div class="pro">
+			<h1>课堂管家帮助以下科目实现提升</h1>
+			<h2>点击主题查看</h2>
+			<div class="menu wrap">
+				<ul>
+					<li>
+						<p><a href="#"><img src="img/menu1.png"/></a></p>
+						<h2><a href="#">计算机</a></h2>
+					</li>
+					<li>
+						<p><a href="#"><img src="img/menu2.png"/></a></p>
+						<h2><a href="#">工程</a></h2>
+					</li>
+					<li>
+						<p><a href="#"><img src="img/menu3.png"/></a></p>
+						<h2><a href="#">数学</a></h2>
+					</li>
+					<li>
+						<p><a href="#"><img src="img/menu4.png"/></a></p>
+						<h2><a href="#">物理</a></h2>
+					</li>
+					<li>
+						<p><a href="#"><img src="img/menu5.png"/></a></p>
+						<h2><a href="#">经济学</a></h2>
+					</li>
+					<li>
+						<p><a href="#"><img src="img/menu6.png"/></a></p>
+						<h2><a href="#">化学</a></h2>
+					</li>
+					<li>
+						<p><a href="#"><img src="img/menu7.png"/></a></p>
+						<h2><a href="#">英语</a></h2>
+					</li>
+					<li>
+						<p><a href="#"><img src="img/menu8.png"/></a></p>
+						<h2><a href="#">生物</a></h2>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="intro">
+				<div class="intro_left">
+					<img src="img/pic.png"/>
+				</div>
+				<div class="intro_right">
+					<div class="intro_right_main">
+						<h2>课堂管家介绍</h2>
+						<h3>课堂的电子眼 现在很多学校推行网络教学,对于中学生来而言计算机最能
+		提起他们的兴...</h3>
+						<h4><input type="button" name="" id="" value="点击了解" /></h4>
+						<dl>
+							<dd>简单易用的师生问答平台大大提高教师工作效率</dd>
+							<dd>功能强大的编辑器可以轻松输入公式、代码及多种类型文件。</dd>
+							<dd>智能化排序让关键性问题得到快速回复</dd>
+							<dd>教师解答、审阅问题让班级学习进度保持一致</dd>
+							<dd>匿名提问功能鼓励所有学生参与问答</dd>
+							<dd>高度定制化的在线投票功能</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pro">
+			<h1>最新博客</h1>
+			<h2>课堂管家的博客</h2>
+			<div class="newsList">
+				<ul>
+					<li class="li1">
+						<div class="newsBar">
+							<div class="time">
+								15<br />日
+							</div>
+							<div class="scroll">
+								<div class="icon">
+									<span class="cur"></span>
+									<span></span>
+									<span></span>
+								</div>
+								<dl>
+									<dd><img src="img/pic1.png"/></dd>
+									<dd><img src="img/pic2.png"/></dd>
+									<dd><img src="img/pic1.png"/></dd>
+								</dl>
+							</div>
+						</div>
+						<div class="newsTxt">
+							<h3>课堂管家博客</h3>
+							<p>进入夏季以来,气温逐渐升高,对于爱车也是不小的考验。面临夏季的酷暑爱车我们又需要注意哪些安全事项呢?下面我们就来聊一聊夏季用车那些事。 严防水温过高 在夏季...</p>
+							<div class="newsTime">
+								<span>2015.06.15</span> <a href="#">继续阅读 →</a>
+							</div>
+						</div>
+					</li>
+					<li class="li2">
+						<div class="newsBar">
+							<div class="time">
+								15<br />日
+							</div>
+							<img src="img/pic2.png"/>
+						</div>
+						<div class="newsTxt">
+							<h3>课堂管家博客</h3>
+							<p>进入夏季以来,气温逐渐升高,对于爱车也是不小的考验。面临夏季的酷暑爱车我们又需要注意哪些安全事项呢?下面我们就来聊一聊夏季用车那些事。 严防水温过高 在夏季...</p>
+							<div class="newsTime">
+								<span>2015.06.15</span> <a href="#">继续阅读 →</a>
+							</div>
+						</div>
+					</li>
+					<li class="li3">
+						<div class="newsBar">
+							<div class="time">
+								15<br />日
+							</div>
+							<img src="img/pic3.png"/>
+						</div>
+						<div class="newsTxt">
+							<h3>课堂管家博客</h3>
+							<p>进入夏季以来,气温逐渐升高,对于爱车也是不小的考验。面临夏季的酷暑爱车我们又需要注意哪些安全事项呢?下面我们就来聊一聊夏季用车那些事。 严防水温过高 在夏季...</p>
+							<div class="newsTime">
+								<span>2015.06.15</span> <a href="#">继续阅读 →</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="NewsMore">
+				<a href="#">阅读更多</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrap">
+			<div class="footer_nav">
+				<dl>
+					<dt><a href="#">关于</a></dt>
+					<dd><a href="#">关于我们</a></dd>
+					<dd><a href="#">团队</a></dd>
+					<dd><a href="#">博客</a></dd>
+					<dd><a href="#">投资人关系</a></dd>
+					<dd><a href="#">新闻报道</a></dd>
+					<dd><a href="#">工作机会</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="#">产品</a></dt>
+					<dd><a href="#">功能介绍</a></dd>
+					<dd><a href="#">高校接入</a></dd>
+					<dt><a href="#">支持</a></dt>
+					<dd><a href="#">帮助中心</a></dd>
+					<dd><a href="#">联系我们</a></dd>
+				</dl>
+			</div>
+			<div class="footer_webChat">
+				<img src="img/webchat.jpg"/>
+			</div>
+		</div>
+		<div class="foot">
+			Copyright © diannaoguanj.CN
+		</div>
+	</div>
+</body>
+</html>
