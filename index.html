@@ -25,6 +25,11 @@
 					}]
     		}
     		$(".scroll").banner(imgJson);
+    		$(".scroll dd").each(function(){
+    			var _img = $(this).find("img").attr("src");
+    			$(this).find("img").attr("src",_img.substr(_img.length - 2);
+    		})
+    		
     		$(".Register").click(function(){
     			if($(".loginBox").css("display") == "none")
     			{
